@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a90690b6d7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light">
+  <nav class="navbar bg-light navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand">Instragram
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <form class="d-flex" role="menu">
+        <button type="button" class="btn btn-success text-nowrap" data-bs-toggle="modal" data-bs-target="#newpost">
+          Create a new post
+        </button>
+
+        <!-- dropdawn -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-sharp-duotone fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end">
+            <li><a class="dropdown-item active" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="newpost" tabindex="-1" aria-labelledby="newpost" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="newpost">Create a new post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">
+              <p class="fs1">Caption:</p>
+            </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="button" class="btn btn-light border border-1 mt-1"><i
+                class="fa-solid fa-location-dot"></i></button>
+            <button type="button" class="btn btn-light border border-1 mt-1">
+              <i class="fa-solid fa-camera"></i>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer d-flex">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mt-3">
+    <ul class="nav justify-content-center" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active btn btn-light fs-2 m-3" id="grid1-tab" data-bs-toggle="tab"
+          data-bs-target="#grid1" type="button" role="tab" aria-controls="grid1" aria-selected="true">
+          <i class="bi bi-app"></i>
+        </button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link btn btn-light fs-2 m-3" id="grid3-tab" data-bs-toggle="tab" data-bs-target="#grid3"
+          type="button" role="tab" aria-controls="grid3" aria-selected="false">
+          <i class="bi bi-border-outer"></i>
+        </button>
+      </li>
+      <li class="nav-item">
+          <i class="fa-solid fa-user"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="tab-content mt-3">
+    <div class="tab-pane fade show active container text-center mt-3" id="grid1" role="tabpanel"
+      aria-labelledby="grid1-tab">
+      <div class="row row-cols-1 g-3 justify-content-center">
+        <div class="col d-flex justify-content-center">
+          <div style="max-width:600px; width:100%;">
+            <div
+              class="d-flex justify-content-between align-items-center border border-1 px-2 py-1 bg-light rounded-top">
+              <span class="fw-bold">Cristano Ronaldo haciendo un pastel.</span>
+              <span class="text-muted">24/10</span>
+            </div>
+            <img src="https://file.nanobanana.org/nano-banana/kie/20251024/1761332963627-f4vy8f.png"
+              class="img-fluid w-100 rounded-bottom" alt="">
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div style="max-width:600px; width:100%;">
+            <div
+              class="d-flex justify-content-between align-items-center border border-1 px-2 py-1 bg-light rounded-top">
+              <span class="fw-bold">Fernando Alonso en el podio</span>
+              <span class="text-muted">24/10</span>
+            </div>
+            <img src="https://d3cm515ijfiu6w.cloudfront.net/wp-content/uploads/2023/03/07155312/fernando-alonso-fist-pump-bahrain-podium-planetf1.jpg"
+              class="img-fluid w-100 rounded-bottom" alt="">
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div style="max-width:600px; width:100%;">
+            <div
+              class="d-flex justify-content-between align-items-center border border-1 px-2 py-1 bg-light rounded-top">
+              <span class="fw-bold">Kylian Mbappé celebrando el gol que definió el partido</span>
+              <span class="text-muted">24/10</span>
+            </div>
+            <img src="https://i.pinimg.com/736x/ed/cd/0e/edcd0e17b08209d7de3d4721470e6db3.jpg"
+              class="img-fluid w-100 rounded-bottom" alt="">
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div style="max-width:600px; width:100%;">
+            <div
+              class="d-flex justify-content-between align-items-center border border-1 px-2 py-1 bg-light rounded-top">
+              <span class="fw-bold">John Cena en Smackdown</span>
+              <span class="text-muted">24/10</span>
+            </div>
+            <img src="https://i0.wp.com/es.hollywoodreporter.com/wp-content/uploads/2025/09/John-Cena-entrara-al-ring-para-una-ultima-lucha-en-diciembre.jpg?fit=1280%2C770&ssl=1"
+              class="img-fluid w-100 rounded-bottom" alt="">
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div style="max-width:600px; width:100%;">
+            <div
+              class="d-flex justify-content-between align-items-center border border-1 px-2 py-1 bg-light rounded-top">
+              <span class="fw-bold">Carlos ALcaraz y Jack Sinner recibiendo los respectivos trofeos del torneo de Arabia Saudí</span>
+              <span class="text-muted">24/10</span>
+            </div>
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.heraldo.es%2Fnoticias%2Fdeportes%2F2025%2F10%2F21%2Fmillonada-perdida-carlos-alcaraz-arabia-1863665.html&psig=AOvVaw0q08_0iiWnGn49FlXrUP1h&ust=1761420108034000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCLi66uWPxJADFQAAAAAdAAAAABAE"
+              class="img-fluid w-100 rounded-bottom" alt="">
+          </div>
+        </div>
+
+    <div class="tab-pane fade container text-center mt-3" id="grid3" role="tabpanel" aria-labelledby="grid3-tab">
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col"><img class="img-fluid" src="imagenes/1760990297032-019a0333-499f-7584-9fc0-9951e7e9ee72.png"
+            alt=""></div>
+        <div class="col"><img class="img-fluid" src="imagenes/1760990364725-019a0333-499f-7c74-a109-b876713ad0f6.jpeg"
+            alt=""></div>
+        <div class="col"><img class="img-fluid" src="imagenes/1760990415229-019a0335-09d1-74d9-b1ff-1afcd59b9f7d.png"
+            alt=""></div>
+        <div class="col"><img class="img-fluid" src="imagenes/1760990606649-019a0338-01bd-7108-aeb1-dd200dc5ae0c.png"
+            alt=""></div>
+        <div class="col"><img class="img-fluid" src="imagenes/1760990738893-019a033a-02af-7cb6-b2db-2ff77cb315c5.png"
+            alt=""></div>
+        <div class="col"><img class="img-fluid" src="imagenes/1760990864040-019a033b-e65b-7c12-b1e0-80cebe16ce38.png"
+            alt=""></div>
+        <div class="col"><img class="img-fluid" src="imagenes/1761061308675-019a076e-bd42-7f5c-8b7f-5ccea3d81533.png"
+            alt=""></div>
+        <div class="col"><img class="img-fluid" src="imagenes/1761068591684-019a07dc-aa76-7582-a125-cff546642a31.png"
+            alt=""></div>
+        <div class="col"><img class="img-fluid" src="imagenes/1761068633067-019a07de-9a60-7003-ad34-26e5f8c49f0f.png"
+            alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
